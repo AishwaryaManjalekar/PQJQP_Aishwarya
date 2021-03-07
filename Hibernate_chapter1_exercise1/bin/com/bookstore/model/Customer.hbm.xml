@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.bookstore.model.Customer" table="CUSTOMER">
+		<id name="bookNo" type="integer">
+            <column name="BOOKNO" length="10" />
+            <generator class="native" />
+        </id>
+        <property name="name" type="string">
+            <column name="NAME" length="20" />
+        </property>
+        
+        <property name="description" type="string">
+            <column name="DESCRIPTION" length="40" />
+        </property>
+        <property name="price" type="double">
+            <column name="PRICE" />
+        </property>
+ 
+         <property name="firstname" type="string">
+            <column name="FIRSTNAME" length="20" />
+        </property>
+        <property name="lastname" type="string">
+            <column name="LASTNAME" length="20" />
+        </property>
+        
+     
+	</class>
+</hibernate-mapping>
